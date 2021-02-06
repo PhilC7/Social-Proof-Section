@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 2rem;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.subhead {
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+
+.container {
+    width: 90%;
+    margin-top: 5rem;
+}
+
+#stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.rated {
+    width: 100%;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.rated p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+.starimg {
+    display: flex;
+    justify-content: center;
+}
+
+.starimg svg {
+    margin-left: .5rem;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buyer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2.5rem 0;
+    margin-bottom: 1rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.name {
+    margin-left: 1rem;
+}
+
+.profile h2 {
+    color: white;
+    font-weight: 700;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.profile h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
+.buyer p {
+    color: white;
+    width: 75%;
+    font-size: .8rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.buyer img {
+    border-radius: 50%;
+    width: 15%;
+}
+.attribution {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* larger screensize */
+@media (min-width: 1200px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        width: 75%;
+        height: 75vh;
+    }
+
+    .top {
+        display: flex;
+    }
+
+    .intro {
+        width: 50%;
+    }
+
+    h1, .subhead {
+       text-align: left;
+       margin: 0;
+   }
+
+   h1 {
+       font-size: 3rem;
+   }
+
+   .subhead {
+       font-size: 1,5rem;
+       padding-right: 5rem;
+   }
+
+   #stars {
+       width: 50%;
+   }
+
+    .rated {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rated:first-child {
+        align-self: flex-start;
+    }
+
+    .rated:last-child {
+        align-self: flex-end;
+    }
+
+    .rated p {
+        padding: 1rem 1rem 1rem 0;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    #reviews {
+        flex-direction: row;
+        height: 500px;
+    }
+
+    .buyer {
+        margin: 1rem;
+    }
+
+    .buyer:first-child {
+        align-self: flex-start;
+    }
+    
+    .buyer:last-child {
+        align-self: flex-end;
+    }
+
+}
